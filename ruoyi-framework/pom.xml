@@ -63,15 +63,21 @@
 		<dependency>
 			<groupId>com.github.theborakompanioni</groupId>
 			<artifactId>thymeleaf-extras-shiro</artifactId>
+			<version>2.0.1-SNAPSHOT</version>
+			<!--<version>1.2.1</version>-->
 		</dependency>
+
+
 
 		<!-- 解析客户端操作系统、浏览器等 -->
 		<dependency>
 			<groupId>eu.bitwalker</groupId>
 			<artifactId>UserAgentUtils</artifactId>
+			<version>1.20</version>
 		</dependency>
 
-        <!-- 系统模块-->
+
+		<!-- 系统模块-->
         <dependency>
             <groupId>com.ruoyi</groupId>
             <artifactId>ruoyi-system</artifactId>
@@ -81,8 +87,11 @@
 		<dependency>
 			<groupId>com.github.oshi</groupId>
 			<artifactId>oshi-core</artifactId>
+			<version>3.13.0</version>
 		</dependency>
-		
+
+
+
 		<dependency>
 			<groupId>net.java.dev.jna</groupId>
 			<artifactId>jna</artifactId>
@@ -94,5 +103,12 @@
 		</dependency>
 
     </dependencies>
-    
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>http://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
