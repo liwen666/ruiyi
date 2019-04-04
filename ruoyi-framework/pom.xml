@@ -63,8 +63,13 @@
 		<dependency>
 			<groupId>com.github.theborakompanioni</groupId>
 			<artifactId>thymeleaf-extras-shiro</artifactId>
-			<version>2.0.1-SNAPSHOT</version>
-			<!--<version>1.2.1</version>-->
+			<!--<version>2.0.1-SNAPSHOT</version>-->
+			<version>2.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf</artifactId>
+			<version>3.0.11.RELEASE</version>
 		</dependency>
 
 
@@ -87,8 +92,9 @@
 		<dependency>
 			<groupId>com.github.oshi</groupId>
 			<artifactId>oshi-core</artifactId>
-			<version>3.13.0</version>
+			<version>3.9.1</version>
 		</dependency>
+
 
 
 
@@ -103,11 +109,19 @@
 		</dependency>
 
     </dependencies>
+	<!--<distributionManagement>-->
+		<!--<snapshotRepository>-->
+			<!--<id>ossrh</id>-->
+			<!--<name>Sonatype Nexus Snapshots</name>-->
+			<!--<url>http://oss.sonatype.org/content/repositories/snapshots</url>-->
+		<!--</snapshotRepository>-->
+
+	<!--</distributionManagement>-->
 	<distributionManagement>
 		<snapshotRepository>
-			<id>ossrh</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>http://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>aaa</id>
+			<name>center</name>
+			<url>http://repo1.maven.org/maven2/</url>
 		</snapshotRepository>
 	</distributionManagement>
 

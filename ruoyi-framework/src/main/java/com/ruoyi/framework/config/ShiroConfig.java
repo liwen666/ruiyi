@@ -321,6 +321,10 @@ public class ShiroConfig
         return syncOnlineSessionFilter;
     }
 
+    public static void main(String[] args) {
+            ShiroDialect sd = new ShiroDialect();
+            System.out.println(sd);
+    }
     /**
      * 自定义验证码过滤器
      */
@@ -378,3 +382,4 @@ public class ShiroConfig
         return authorizationAttributeSourceAdvisor;
     }
 }
+
